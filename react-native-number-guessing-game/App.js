@@ -9,18 +9,20 @@ export default class App extends React.Component {
 
     guessThis = () => {
       
-      if(parseInt(this.state.text) < parseInt(rightNumber)) {
+      if(parseInt(this.state.text) < parseInt(this.state.rightNumber)) {
         this.setState(
           {advice: 'Too low value!'}
         );
       } else if(parseInt(this.state.text) > parseInt(this.state.rightNumber)) {
-
-
+        this.setState(
+          {advice: 'Too big value!'}
+        );
       } else {
-
-
+        this.setState(
+          {advice: 'You got it right!'}
+        );
       }
-      Alert.alert(this.state.text);
+      //Alert.alert(this.state.text);
     };
 
   render() {
