@@ -53,7 +53,7 @@ export default class App extends React.Component {
         
         </View>
         <View style={{flex:2, flexDirection:'row', alignItems:'center', justifyContent:'space-around'}}>
-          <Button onPress={this.addThis} title="+" />
+          <Button style={{marginRight: 50}} onPress={this.addThis} title="+" />
           <Button onPress={this.minusThis} title="-" />  
         </View>
         <View style={{flex:2, flexDirection: 'column', alignItems:'center', justifyContent:'space-around'}}>
